@@ -114,10 +114,10 @@
   <section class="policy" id="ja">
     <h2 class="doctitle">プライバシーポリシー</h2>
     <p class="intro">本プライバシーポリシー（以下「本ポリシー」といいます）は、Yolca（以下「当方」といいます）が提供する語学学習アプリ「Memoreo」（以下「本アプリ」といいます）における、利用者の情報の取り扱いについて定めるものです。本アプリをご利用いただいた場合、本ポリシーの内容に同意いただいたものとみなします。</p>
-    <p class="effective">施行日：2026年6月21日<br>最終改定日：2026年9月10日</p>
+    <p class="effective">施行日：2026年6月21日<br>最終改定日：2026年9月26日</p>
 
     <h3>1. はじめに</h3>
-    <p>当方は、利用者のプライバシーを尊重し、その保護に努めます。本アプリは、利用者を特定するためのアカウント登録（会員登録・ログイン）の機能を持たず、氏名・メールアドレス・電話番号などの個人を特定する情報を収集することはありません。本アプリで利用者が作成・入力した学習データは、原則として利用者ご自身の端末内にのみ保存されます。唯一の例外は、利用者ご自身が報告機能を使用した場合です（第2条2-4）。</p>
+    <p>当方は、利用者のプライバシーを尊重し、その保護に努めます。本アプリは、利用者を特定するためのアカウント登録（会員登録・ログイン）の機能を持たず、氏名・メールアドレス・電話番号などの個人を特定する情報を収集することはありません。本アプリで利用者が作成・入力した学習データは、原則として利用者ご自身の端末内にのみ保存されます。例外は、AI機能を使用した場合に、その語と訳・AIが作成した内容などを当方のサーバーに記録する場合（第2条2-2）と、報告機能を使用した場合（第2条2-4）です。いずれも、利用者を特定できる情報とは結び付けていません。</p>
 
     <h3>2. 当方が取り扱う情報</h3>
     <h4>2-1. 端末内に保存される情報</h4>
@@ -135,15 +135,16 @@
     <p>バックアップ機能で作成されるバックアップファイルは、利用者ご自身の操作によって作成・保存されます。作成されたファイルの保管と管理は利用者に委ねられ、当方がその内容を取得することはありません。</p>
 
     <h4>2-2. AI機能の利用時に外部へ送信される情報</h4>
-    <p>本アプリには、AIによる次の機能があります：例文・熟語・覚え方などの生成、写真からの単語の読み取り、貼り付けたテキストからの単語の抽出。利用者がこれらのAI機能を利用した場合に限り、以下の情報が外部に送信されます。</p>
-    <p><span class="emph">送信される情報：</span>利用者が登録した単語とその訳、学習する言語の設定、母語の設定。写真からの読み取り機能を使用した場合は、利用者が撮影・選択した画像。テキスト解析機能を使用した場合は、利用者が貼り付けたテキスト。</p>
-    <p><span class="emph">送信されない情報：</span>氏名、メールアドレス、端末を識別する情報など、利用者個人を特定できる情報は一切送信されません。</p>
-    <p><span class="emph">送信の経路：</span>上記の情報は、当方が管理する中継サーバー（Cloudflare Workers）を経由して、Google が提供する生成AIサービス「Gemini API」に送信され、生成された結果が本アプリに返されます。</p>
-    <p><span class="emph">当方の中継サーバーでの取り扱い：</span>当方の中継サーバーは、受け取った情報を Gemini API に転送し、その結果を返すだけの処理を行い、送信された単語・画像・テキストの内容を保存することはありません（利用者が報告機能を使用した場合については第2条2-4をご参照ください）。なお、不正利用を防止するため、アクセス元のIPアドレスをアクセス頻度の制限（レート制限）の判定にのみ一時的に利用します。</p>
-    <p><span class="emph">Google Gemini API での取り扱い：</span>Google Gemini API に送信された情報の取り扱いについては、Google の利用規約およびプライバシーポリシーに従って処理されます。詳細については、以下をご参照ください。</p>
+    <p>本アプリには、AIによる次の機能があります：単語の訳の候補の表示（単語を調べる）、例文・熟語・覚え方などの生成、写真の文字の書き起こし（写真から単語を選ぶ・印を付けた単語の読み取り）、写真や貼り付けたテキストからの単語の抽出（一括登録）。これらの機能が表示する訳の候補・例文・熟語・覚え方・書き起こしは、<strong>AIが作成したもの</strong>です。利用者がこれらのAI機能を利用した場合に限り、以下の情報が外部に送信されます。</p>
+    <p><span class="emph">送信される情報：</span>利用者が入力・登録した単語とその訳、学習する言語の設定、母語の設定。写真を使う機能を使用した場合は、利用者が撮影・選択した画像。テキスト解析機能を使用した場合は、利用者が貼り付けたテキスト。</p>
+    <p><span class="emph">個人を特定できる情報について：</span>当方が利用者に氏名・メールアドレス・端末を識別する情報（広告IDなど）を求めることはなく、本アプリがこれらを送信することもありません。ただし、利用者が撮影・選択した画像や貼り付けたテキストに氏名などの情報が写り込んでいる・含まれている場合は、その情報も画像・テキストとともに送信されます。個人の情報が写った写真や、個人の情報を含むテキストは送らないでください。</p>
+    <p><span class="emph">送信の経路：</span>上記の単語・訳・画像・テキストは、<strong>Anthropic, PBC（米国）のAI（Claude）で処理されます</strong>。当方が管理する中継サーバー（Cloudflare Workers）を経由して、Anthropic が提供する生成AIサービス「Claude API」に送信され、生成された結果が本アプリに返されます。</p>
+    <p><span class="emph">匿名の値の受け渡し：</span>不正利用の防止のため、アクセス元のIPアドレスから作った匿名の値（IPアドレスそのものではなく、Anthropic が元のIPアドレスを知ることはできない形に変換した値）を、利用の区別のための値として Anthropic に渡します。</p>
+    <p><span class="emph">当方の中継サーバーでの取り扱い：</span>送信された画像と貼り付けたテキストは保存しません。単語とその訳、AIが作成した訳の候補・例文・熟語・覚え方は、同じ単語についての次回以降の応答を速く・安定して返すために当方のサーバーに記録し、他の利用者の同じ単語への応答にも使うことがあります。この記録には、利用者を特定できる情報や上記の匿名の値は含みません。また、不正利用を防止するため、アクセス元のIPアドレスをアクセス頻度の制限（レート制限）の判定に一時的に利用し、上記の匿名の値ごとのAI機能の利用回数（単語・画像・テキストの内容は含みません）を記録します。この利用回数の記録は3か月で自動的に削除されます。</p>
+    <p><span class="emph">Anthropic での取り扱い：</span>Anthropic は、Claude API を通じて送信された情報をAIモデルの学習に使用しません（Anthropic の商用利用規約による）。Anthropic が公表している API の標準の扱いでは、送信された情報と生成された結果は、受領または生成から30日以内に Anthropic のシステムから自動的に削除されます（それまでの間、保持されることがあります）。これとは別に、Anthropic の自動の安全確認によって利用ポリシーに違反する疑いがあると判定された場合に限り、その送信と結果が最長2年間保持されることがあります。取り扱いの詳細は、Anthropic の商用利用規約（データ処理に関する条件を含みます）に従います。</p>
     <ul>
-      <li>Google プライバシーポリシー：<a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
-      <li>Google APIs 利用規約：<a href="https://developers.google.com/terms">https://developers.google.com/terms</a></li>
+      <li>Anthropic 商用利用規約：<a href="https://www.anthropic.com/legal/commercial-terms">https://www.anthropic.com/legal/commercial-terms</a></li>
+      <li>Anthropic のデータの保持期間：<a href="https://privacy.claude.com/en/articles/7996866-how-long-do-you-store-my-organization-s-data">https://privacy.claude.com/en/articles/7996866-how-long-do-you-store-my-organization-s-data</a></li>
     </ul>
 
     <h4>2-3. 購入・サブスクリプションに関する情報</h4>
@@ -157,15 +158,15 @@
     <p><span class="emph">送信・保存される情報：</span>報告された内容の本文、どの項目か（例文・熟語・覚え方・訳の候補の別）、選択された理由（事実と違う／不適切／その他）、学習する言語と母語の組み合わせ。</p>
     <p><span class="emph">送信されない情報：</span>氏名、メールアドレス、端末を識別する情報など、利用者個人を特定できる情報は一切送信されません。単語帳のその他の内容も送信されません。</p>
     <p><span class="emph">保存の期間と目的：</span>報告された内容は、AIが作成する内容の品質を改善する目的、および不正な利用を防止する目的にのみ使用し、<strong>受領から180日が経過すると自動的に削除されます。</strong>第三者に提供することはありません。</p>
-    <p>本アプリにおいて、当方のサーバーに内容が保存されるのはこの報告機能のみです。報告を行わない限り、単語帳の内容は第2条2-1のとおり利用者ご自身の端末内にのみ保存されます。</p>
+    <p>報告を行わない限り、単語帳の内容（単語の一覧・メモ・学習の記録など）は第2条2-1のとおり利用者ご自身の端末内にのみ保存されます（AI機能の利用時に当方のサーバーに記録する語と訳・AIが作成した内容については第2条2-2をご参照ください）。</p>
 
     <h3>3. 当方が収集しない情報・利用しない機能</h3>
     <p>本アプリでは、利用者に安心してご利用いただくため、以下を行いません。</p>
     <ul>
       <li>アカウント登録・ログイン機能はありません（氏名・メールアドレス・パスワード等を収集しません）。</li>
       <li>広告の配信、およびそのための情報収集は行いません。</li>
-      <li>アクセス解析ツール（Google Analytics、Firebase Analytics 等）やクラッシュ解析ツールなど、第三者が提供する情報収集ツール（SDK）は一切組み込んでいません。</li>
-      <li>マイク、位置情報、連絡先（アドレス帳）へのアクセスは要求しません。カメラおよび写真へのアクセスは、利用者が「写真からの単語読み取り」機能を使用するときにのみ行われます（第4条参照）。</li>
+      <li>アクセス解析ツール（Google Analytics、Firebase Analytics 等）やクラッシュ解析ツールなど、第三者が提供する情報収集ツール（SDK）は組み込んでいません（購入状態の管理に使う RevenueCat の SDK を除きます。第2条2-3をご参照ください）。</li>
+      <li>マイク、位置情報、連絡先（アドレス帳）へのアクセスは要求しません。カメラおよび写真へのアクセスは、利用者が写真を使う機能（写真から単語を選ぶ・印を付けた単語の読み取り・一括登録の読み取り）を使用するときにのみ行われます（第4条参照）。</li>
       <li>音声読み上げ（発音の再生）は端末内のOSの機能で行われ、音声データが外部に送信されることはありません。</li>
     </ul>
 
@@ -178,22 +179,22 @@
       <li>通知実行時に端末を一時的に起動する機能</li>
       <li>指定した時刻に正確に通知を行う機能</li>
     </ul>
-    <p>「写真からの単語読み取り」機能のために、利用者がこの機能を使用するときにのみ、カメラまたは写真（ギャラリー）へのアクセスを行います。撮影・選択された画像はAIによる読み取り処理（第2条2-2）にのみ使用され、本アプリが画像を端末外に別途保存することはありません。</p>
+    <p>写真を使う機能のために、利用者がこれらの機能を使用するときにのみ、カメラまたは写真（ギャラリー）へのアクセスを行います。撮影・選択された画像はAIによる読み取り処理（第2条2-2）にのみ使用され、本アプリや当方のサーバーが画像を別途保存することはありません（Anthropic での取り扱いは第2条2-2のとおりです）。</p>
     <p>マイク・位置情報などのその他のセンシティブな権限は要求しません。</p>
 
     <h3>5. 情報の第三者提供</h3>
-    <p>当方は、本ポリシーに記載のない第三者に対して、利用者の情報を提供・販売・共有することはありません。ただし、次の場合を除きます。AI機能の利用にあたり、第2条2-2に記載のとおり Google Gemini API へ必要な情報を送信する場合。また、購入状態の管理のため、第2条2-3に記載のとおり RevenueCat, Inc. および各プラットフォーム（App Store 等）において購入情報が処理される場合。なお、法令に基づく開示請求があった場合など、法律上必要とされる場合には、この限りではありません。</p>
+    <p>当方は、本ポリシーに記載のない第三者に対して、利用者の情報を提供・販売・共有することはありません。ただし、次の場合を除きます。AI機能の利用にあたり、第2条2-2に記載のとおり Anthropic, PBC（Claude API）へ必要な情報を送信する場合（Anthropic は同社の商用利用規約およびデータ処理に関する条件に基づいて情報を取り扱います）。また、購入状態の管理のため、第2条2-3に記載のとおり RevenueCat, Inc. および各プラットフォーム（App Store 等）において購入情報が処理される場合。なお、法令に基づく開示請求があった場合など、法律上必要とされる場合には、この限りではありません。</p>
 
     <h3 id="data-deletion">6. データの削除について</h3>
     <p>本アプリはアカウント登録を行わないため、削除の対象となる情報はごくわずかです。</p>
     <p><span class="emph">端末内のデータ：</span>登録した単語・フォルダ・学習履歴・各種設定は、すべて利用者の端末内にのみ保存されています。<strong>本アプリをアンインストールすると、これらはすべて削除されます。</strong>当方がこれらのデータにアクセスすることはできないため、当方に削除を依頼する必要はありません。ただし第2条2-1に記載のキーチェーンの記録（ウェルカムクレジットの付与状態・当月のAI利用回数・匿名のID）は、アンインストールしても残ります。削除するには端末の初期化が必要です。</p>
-    <p><span class="emph">当方のサーバーに残る情報：</span>先着キャンペーンの二重申請を防ぐために受付期間中に保存した匿名のIDのみです。このIDはアプリが乱数で生成した無意味な文字列で、氏名・メールアドレス等とは結び付いていません。削除をご希望の場合は、下記のお問い合わせ先までご連絡ください。<strong>ただし、このIDだけでは当方が利用者を特定できないため、削除のご依頼にあたっては該当のIDをお知らせいただく必要があります。</strong></p>
+    <p><span class="emph">当方のサーバーに残る情報：</span>第2条2-2の記録（語と訳・AIが作成した内容、匿名の値ごとの利用回数）、第2条2-4の報告のほか、先着キャンペーンの二重申請を防ぐために受付期間中に保存した匿名のIDがあります。このIDはアプリが乱数で生成した無意味な文字列で、氏名・メールアドレス等とは結び付いていません。削除をご希望の場合は、下記のお問い合わせ先までご連絡ください。<strong>ただし、このIDだけでは当方が利用者を特定できないため、削除のご依頼にあたっては該当のIDをお知らせいただく必要があります。</strong></p>
     <p><span class="emph">購入に関する情報：</span>購入履歴は RevenueCat, Inc. および各プラットフォーム（Google Play、App Store）が保持しています。これらの削除については、各社の定める手続きに従います。なお、購入情報を削除すると、有料プランの復元ができなくなる場合があります。</p>
-    <p><span class="emph">AI機能に送信した内容：</span>単語や画像は処理のために送信されるだけで、当方のサーバーには保存していません。したがって削除の対象となるデータは残りません。</p>
+    <p><span class="emph">AI機能に送信した内容：</span>画像と貼り付けたテキストは、当方のサーバーには保存していません。語と訳・AIが作成した内容の記録は利用者と結び付いていないため、当方において特定の利用者の分を選び出して削除することはできません。匿名の値ごとの利用回数は3か月で自動的に削除されます。Anthropic での保持については第2条2-2のとおりです。</p>
     <p><span class="emph">報告された内容：</span>利用者が「この内容を報告」を行った場合に限り、第2条2-4に記載の情報が当方のサーバーに保存され、<strong>受領から180日が経過すると自動的に削除されます。</strong>この情報には利用者を特定できる項目が含まれないため、当方において特定の利用者の報告のみを選び出して削除することはできません。180日を待たずに削除をご希望の場合は、報告した内容がわかる形で下記のお問い合わせ先までご連絡ください。</p>
 
     <h3>7. お子様の利用について</h3>
-    <p>本アプリは、特定の年齢層に限定したものではありませんが、個人情報を収集しない設計となっています。保護者の方は、お子様の利用について本ポリシーをご確認ください。</p>
+    <p>本アプリは、特定の年齢層に限定したものではありませんが、個人情報を収集しない設計となっています。AI機能には、語学学習の用途に限る指示と、年齢にふさわしくない内容を作らないための指示を設けています。不適切な内容に気づいた場合は、アプリ内の「この内容を報告」からお知らせください。当方は、児童の個人情報の保護に関する法令のうち、適用されるものを遵守します。<strong>18歳未満の方は、保護者の同意を得てご利用ください。</strong>保護者の方は、お子様の利用について本ポリシーをご確認ください。</p>
 
     <h3>8. プライバシーポリシーの変更</h3>
     <p>当方は、法令の変更や本アプリの機能追加などに応じて、本ポリシーを変更することがあります。重要な変更を行う場合には、本アプリ内または当方が指定する方法で通知します。変更後のポリシーは、本アプリ内または当方が指定する場所に掲載した時点から効力を生じるものとします。</p>
@@ -212,10 +213,10 @@
   <section class="policy" id="en">
     <h2 class="doctitle">Privacy Policy</h2>
     <p class="intro">This Privacy Policy (the "Policy") describes how Yolca (the "Developer," "we," "us," or "our") handles user information in connection with the language-learning app "Memoreo" (the "App"). By using the App, you are deemed to have agreed to the contents of this Policy.</p>
-    <p class="effective">Effective Date: June 21, 2026<br>Last Revised: September 10, 2026</p>
+    <p class="effective">Effective Date: June 21, 2026<br>Last Revised: September 26, 2026</p>
 
     <h3>1. Introduction</h3>
-    <p>We respect your privacy and are committed to protecting it. The App does not provide any account registration or login functionality to identify users, and does not collect personally identifying information such as your name, email address, or phone number. The learning data that you create or enter in the App is, as a rule, stored only on your own device. The only exception applies if you choose to use the reporting feature (see Section 2-4).</p>
+    <p>We respect your privacy and are committed to protecting it. The App does not provide any account registration or login functionality to identify users, and does not collect personally identifying information such as your name, email address, or phone number. The learning data that you create or enter in the App is, as a rule, stored only on your own device. The exceptions are when you use the AI features, in which case the words, their translations and the AI-generated content are recorded on our server (see Section 2-2), and when you use the reporting feature (see Section 2-4). Neither is linked to any information that can identify you.</p>
 
     <h3>2. Information We Handle</h3>
     <h4>2-1. Information Stored on Your Device</h4>
@@ -233,15 +234,16 @@
     <p>Backup files created with the backup feature are created and saved by your own action. Storage and management of these files are your responsibility, and we never obtain their contents.</p>
 
     <h4>2-2. Information Sent Externally When Using the AI Features</h4>
-    <p>The App includes the following AI features: generating example sentences, idioms, and memory aids; extracting words from photos; and extracting words from pasted text. Only when you use these AI features, the following information is sent externally.</p>
-    <p><span class="emph">Information that is sent:</span> the word you registered and its translation, the language-being-studied setting, and the native-language setting. If you use the photo extraction feature, the image you captured or selected. If you use the text parsing feature, the text you pasted.</p>
-    <p><span class="emph">Information that is NOT sent:</span> No information that can personally identify you, such as your name, email address, or device identifiers, is sent.</p>
-    <p><span class="emph">Transmission route:</span> The information above is sent, via a relay server managed by us (Cloudflare Workers), to the generative AI service "Gemini API" provided by Google, and the generated results are returned to the App.</p>
-    <p><span class="emph">Handling on our relay server:</span> Our relay server simply forwards the received information to the Gemini API and returns the result; it does not store the transmitted words, images, or text (for the reporting feature, please see Section 2-4). To prevent abuse, the IP address of the request is temporarily used solely for rate limiting.</p>
-    <p><span class="emph">Handling on Google Gemini API:</span> The handling of information sent to the Google Gemini API is governed by Google's terms of service and privacy policy. For details, please refer to the following.</p>
+    <p>The App includes the following AI features: showing suggested translations for a word (Look up words); generating example sentences, idioms, and memory aids; transcribing the text in a photo (Pick words from photo and scanning marked words); and extracting words from photos or pasted text (bulk registration). The suggested translations, example sentences, idioms, memory aids and transcriptions shown by these features are <strong>created by AI</strong>. Only when you use these AI features, the following information is sent externally.</p>
+    <p><span class="emph">Information that is sent:</span> the words you enter or register and their translations, the language-being-studied setting, and the native-language setting. If you use a photo feature, the image you captured or selected. If you use the text parsing feature, the text you pasted.</p>
+    <p><span class="emph">Information that can identify you:</span> We never ask you for your name, email address or device identifiers (such as an advertising ID), and the App never sends them. However, if an image you capture or select, or text you paste, shows or contains information such as a name, that information is sent along with the image or text. Please do not send photos that show personal information or text that contains it.</p>
+    <p><span class="emph">Transmission route:</span> The words, translations, images and text above are <strong>processed by the AI (Claude) of Anthropic, PBC (United States)</strong>. They are sent, via a relay server managed by us (Cloudflare Workers), to the generative AI service "Claude API" provided by Anthropic, and the generated results are returned to the App.</p>
+    <p><span class="emph">Anonymous value passed on:</span> To prevent abuse, we pass Anthropic an anonymous value derived from the IP address of the request, as a value for telling usage apart. It is not the IP address itself and is transformed so that Anthropic cannot learn the original IP address.</p>
+    <p><span class="emph">Handling on our relay server:</span> Images and pasted text are not stored. Words and their translations, and the AI-generated suggested translations, example sentences, idioms and memory aids, are recorded on our server so that later responses for the same word can be returned quickly and consistently, and may also be used to respond to other users for the same word. These records contain no information that can identify you and do not include the anonymous value described above. To prevent abuse, the IP address of the request is also used temporarily for rate limiting, and the number of AI feature uses per anonymous value (without the content of any word, image or text) is recorded. These usage counts are deleted automatically after three months.</p>
+    <p><span class="emph">Handling by Anthropic:</span> Anthropic does not use the information sent through the Claude API to train its AI models (under Anthropic's Commercial Terms of Service). Under Anthropic's published standard handling for the API, the information sent and the generated results are automatically deleted from Anthropic's systems within 30 days of receipt or generation (and may be retained until then). Separately, only if Anthropic's automated safety checks flag a request as possibly violating its Usage Policy, that request and its results may be retained for up to two years. Handling is governed by Anthropic's Commercial Terms of Service (including its data processing terms).</p>
     <ul>
-      <li>Google Privacy Policy: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
-      <li>Google APIs Terms of Service: <a href="https://developers.google.com/terms">https://developers.google.com/terms</a></li>
+      <li>Anthropic Commercial Terms of Service: <a href="https://www.anthropic.com/legal/commercial-terms">https://www.anthropic.com/legal/commercial-terms</a></li>
+      <li>Anthropic data retention: <a href="https://privacy.claude.com/en/articles/7996866-how-long-do-you-store-my-organization-s-data">https://privacy.claude.com/en/articles/7996866-how-long-do-you-store-my-organization-s-data</a></li>
     </ul>
 
     <h4>2-3. Information Related to Purchases and Subscriptions</h4>
@@ -255,15 +257,15 @@
     <p><span class="emph">Information sent and stored:</span> the text of the reported content, which item it was (example sentence, idiom, memory aid, or suggested meaning), the reason you selected (factually wrong / inappropriate / other), and the combination of the language being studied and your native language.</p>
     <p><span class="emph">Information that is NOT sent:</span> No information that can personally identify you, such as your name, email address, or device identifiers, is sent. No other content from your word list is sent either.</p>
     <p><span class="emph">Retention and purpose:</span> Reported content is used solely to improve the quality of AI-generated content and to prevent abuse, and is <strong>automatically deleted 180 days after we receive it.</strong> It is never provided to third parties.</p>
-    <p>This reporting feature is the only case in which content is stored on our server. Unless you send a report, your word list remains only on your own device, as described in Section 2-1.</p>
+    <p>Unless you send a report, the contents of your word list (the list of words, notes, study records, etc.) remain only on your own device, as described in Section 2-1 (for the words, translations and AI-generated content recorded on our server when you use the AI features, please see Section 2-2).</p>
 
     <h3>3. Information We Do Not Collect / Features We Do Not Use</h3>
     <p>To allow you to use the App with peace of mind, we do not do the following.</p>
     <ul>
       <li>There is no account registration or login feature (we do not collect names, email addresses, passwords, etc.).</li>
       <li>We do not serve advertisements, nor do we collect information for that purpose.</li>
-      <li>We do not incorporate any third-party information-collection tools (SDKs), such as access-analytics tools (e.g., Google Analytics, Firebase Analytics) or crash-analytics tools.</li>
-      <li>We do not request access to your microphone, location, or contacts (address book). Access to your camera and photos occurs only when you use the "extract words from photos" feature (see Section 4).</li>
+      <li>We do not incorporate third-party information-collection tools (SDKs), such as access-analytics tools (e.g., Google Analytics, Firebase Analytics) or crash-analytics tools (except the RevenueCat SDK used to manage purchase status; see Section 2-3).</li>
+      <li>We do not request access to your microphone, location, or contacts (address book). Access to your camera and photos occurs only when you use a photo feature (Pick words from photo, scanning marked words, or scanning in bulk registration) (see Section 4).</li>
       <li>Text-to-speech (pronunciation playback) is performed by your device's OS features, and no audio data is sent externally.</li>
     </ul>
 
@@ -276,22 +278,22 @@
       <li>Temporarily waking the device when a notification runs</li>
       <li>Delivering notifications accurately at a specified time</li>
     </ul>
-    <p>For the "extract words from photos" feature, the App accesses your camera or photos (gallery) only when you use that feature. Captured or selected images are used solely for AI extraction (Section 2-2), and the App does not separately store images outside your device.</p>
+    <p>For the photo features, the App accesses your camera or photos (gallery) only when you use those features. Captured or selected images are used solely for AI processing (Section 2-2), and neither the App nor our server separately stores the images (for handling by Anthropic, see Section 2-2).</p>
     <p>The App does not request other sensitive permissions such as microphone or location.</p>
 
     <h3>5. Provision of Information to Third Parties</h3>
-    <p>We do not provide, sell, or share user information with any third party not described in this Policy, except in the following cases: in connection with the use of the AI features, we send the necessary information to the Google Gemini API as described in Section 2-2; and for the management of purchase status, purchase information is processed by RevenueCat, Inc. and by the applicable platform (such as the App Store) as described in Section 2-3. However, this does not apply where disclosure is required by law, such as in response to a lawful request for disclosure.</p>
+    <p>We do not provide, sell, or share user information with any third party not described in this Policy, except in the following cases: in connection with the use of the AI features, we send the necessary information to Anthropic, PBC (Claude API) as described in Section 2-2 (Anthropic handles it under its Commercial Terms of Service and its data processing terms); and for the management of purchase status, purchase information is processed by RevenueCat, Inc. and by the applicable platform (such as the App Store) as described in Section 2-3. However, this does not apply where disclosure is required by law, such as in response to a lawful request for disclosure.</p>
 
     <h3 id="data-deletion-en">6. Deleting Your Data</h3>
     <p>Because the App has no account registration, there is very little information that could be deleted.</p>
     <p><span class="emph">Data on your device:</span> the words, folders, study history and settings you create are stored only on your own device. <strong>Uninstalling the App deletes all of it.</strong> We cannot access this data, so there is no need to ask us to delete it. The Keychain record described in Section 2-1 (the state of the welcome credit, the current month's AI usage count and the anonymous ID) is the exception: it remains after an uninstall, and erasing the device is required to remove it.</p>
-    <p><span class="emph">Information held on our server:</span> only the anonymous ID that was stored to prevent duplicate claims while the first-100-users campaign was running. This ID is a meaningless string generated at random by the App and is not linked to your name or email address. If you would like it deleted, please contact us at the address below. <strong>Because this ID alone does not allow us to identify you, you will need to tell us the ID in question when you make the request.</strong></p>
+    <p><span class="emph">Information held on our server:</span> the records described in Section 2-2 (words, translations and AI-generated content, and usage counts per anonymous value), the reports described in Section 2-4, and the anonymous ID that was stored to prevent duplicate claims while the first-100-users campaign was running. This ID is a meaningless string generated at random by the App and is not linked to your name or email address. If you would like it deleted, please contact us at the address below. <strong>Because this ID alone does not allow us to identify you, you will need to tell us the ID in question when you make the request.</strong></p>
     <p><span class="emph">Purchase information:</span> purchase history is held by RevenueCat, Inc. and by the applicable platform (Google Play, App Store). Deletion follows the procedures those companies define. Note that deleting purchase information may make it impossible to restore a paid plan.</p>
-    <p><span class="emph">Content sent to the AI features:</span> words and images are transmitted only for processing and are not stored on our server, so no data remains to be deleted.</p>
+    <p><span class="emph">Content sent to the AI features:</span> images and pasted text are not stored on our server. The records of words, translations and AI-generated content are not linked to users, so we cannot single out and delete those of a particular user. Usage counts per anonymous value are deleted automatically after three months. For retention by Anthropic, see Section 2-2.</p>
     <p><span class="emph">Reported content:</span> Only if you use "Report this content," the information described in Section 2-4 is stored on our server and is <strong>automatically deleted 180 days after we receive it.</strong> Because this information contains no item that identifies you, we cannot single out and delete the reports of a particular user. If you would like something deleted before the 180 days elapse, please contact us at the address below with enough detail to identify the report.</p>
 
     <h3>7. Use by Children</h3>
-    <p>While the App is not limited to a specific age group, it is designed not to collect personal information. Guardians are encouraged to review this Policy regarding their children's use of the App.</p>
+    <p>While the App is not limited to a specific age group, it is designed not to collect personal information. The AI features include instructions that limit them to language learning and that prevent content unsuitable for the user's age. If you notice inappropriate content, please let us know through "Report this content" in the App. We comply with the applicable laws on the protection of children's personal information. <strong>If you are under 18, please use the App with the consent of a parent or guardian.</strong> Guardians are encouraged to review this Policy regarding their children's use of the App.</p>
 
     <h3>8. Changes to This Privacy Policy</h3>
     <p>We may change this Policy in response to changes in laws or the addition of features to the App. If we make a significant change, we will provide notice within the App or by a method designated by us. The revised Policy takes effect when it is posted within the App or in a location designated by us.</p>
